@@ -1,0 +1,22 @@
+{
+  "name": "reactwebproject",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gcreate": "clasp create --title 'React Test Project' --rootDir ./apps-script",
+    "gpull": "clasp pull",
+    "gpush": "clasp push",
+    "gstart": "clasp push --watch",
+    "gclone": "clasp clone 1HOqkDsDALdNyUJUNZPcYvBRNKnF6hM32HlAp_-KDTXdbUNuhNtXbIwdW --rootDir ./apps-script"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.1",
+    "@types/google-apps-script": "^1.0.51",
+    "parcel": "^2.6.2"
+  }
+}

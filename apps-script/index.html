@@ -39283,7 +39283,1170 @@ var styles = {
 exports["default"] = (0, _menuFactory2["default"])(styles);
 module.exports = exports["default"];
 
+<<<<<<< HEAD
 },{"../menuFactory":"gMDRF"}]},["1xC6H","4x7IN","cc6EV"], "cc6EV", "parcelRequire9d6c")
+=======
+},{"../menuFactory":"gMDRF"}],"2Qnle":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$eb98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$eb98.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _estimatingDetails = require("./src/components/Estimating/EstimatingDetails");
+var _estimatingDetailsDefault = parcelHelpers.interopDefault(_estimatingDetails);
+var _reactstrap = require("reactstrap");
+const EstimatingPage = ()=>{
+    return(// <Label>RPM Press Estimate Calculator</Label>
+    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Card), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.CardBody), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _estimatingDetailsDefault.default), {}, void 0, false, {
+                fileName: "EstimatingPage.js",
+                lineNumber: 33,
+                columnNumber: 5
+            }, undefined)
+        }, void 0, false, {
+            fileName: "EstimatingPage.js",
+            lineNumber: 32,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "EstimatingPage.js",
+        lineNumber: 31,
+        columnNumber: 5
+    }, undefined));
+};
+_c = EstimatingPage;
+exports.default = EstimatingPage;
+var _c;
+$RefreshReg$(_c, "EstimatingPage");
+
+  $parcel$ReactRefreshHelpers$eb98.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"fdOAw","./src/components/Estimating/EstimatingDetails":"aQG0X","reactstrap":"7ZY9I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aQG0X":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9840 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9840.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reprintToggle = require("../ReprintToggle");
+var _reprintToggleDefault = parcelHelpers.interopDefault(_reprintToggle);
+var _reactstrap = require("reactstrap");
+var _s = $RefreshSig$();
+const EstimatingDetails = ()=>{
+    _s();
+    const [nonClickText, setNonClickText] = (0, _react.useState)("False");
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Container), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Form), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                    children: "Job Details"
+                }, void 0, false, {
+                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "For a new estimate, fill in details and click Get a Quote Number"
+                }, void 0, false, {
+                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "To load an estimate, fill in the Estimate Number and click Load"
+                }, void 0, false, {
+                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                    lineNumber: 26,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Row), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Col), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Label), {
+                                htmlFor: "estNumber",
+                                children: "Estimate Number"
+                            }, void 0, false, {
+                                fileName: "src/components/Estimating/EstimatingDetails.js",
+                                lineNumber: 29,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Input), {
+                                type: "text",
+                                name: "estNumber",
+                                id: "estNumber",
+                                disabled: true
+                            }, void 0, false, {
+                                fileName: "src/components/Estimating/EstimatingDetails.js",
+                                lineNumber: 30,
+                                columnNumber: 17
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Estimating/EstimatingDetails.js",
+                        lineNumber: 28,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Row), {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Col), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Label), {
+                                    htmlFor: "cust",
+                                    children: "Customer"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 40,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Input), {
+                                    type: "text",
+                                    name: "cust",
+                                    id: "cust"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 43,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Label), {
+                                    htmlFor: "desc",
+                                    children: "Job Title"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 49,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Input), {
+                                    type: "text",
+                                    name: "desc",
+                                    id: "desc"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 52,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                            lineNumber: 39,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Col), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Label), {
+                                    htmlFor: "pm",
+                                    children: "Project Manager"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 60,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Input), {
+                                    type: "select",
+                                    id: "pm",
+                                    name: "pm",
+                                    className: "form-control",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {}, void 0, false, {
+                                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                                            lineNumber: 69,
+                                            columnNumber: 21
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                            children: "Merle May Lestrange Lauria Lenssen"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                                            lineNumber: 70,
+                                            columnNumber: 21
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 63,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Label), {
+                                    htmlFor: "rep",
+                                    children: "Sales Rep"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 72,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Input), {
+                                    type: "select",
+                                    id: "rep",
+                                    name: "rep",
+                                    className: "form-control",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {}, void 0, false, {
+                                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                                            lineNumber: 82,
+                                            columnNumber: 21
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                            children: "Berta Caseres"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                                            lineNumber: 83,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 76,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                            lineNumber: 59,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Col), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Label), {
+                                    htmlFor: "type",
+                                    children: "Job Type"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 88,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Input), {
+                                    type: "select",
+                                    name: "type",
+                                    id: "type",
+                                    className: "form-control",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {}, void 0, false, {
+                                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                                            lineNumber: 96,
+                                            columnNumber: 21
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                            children: "New Job"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                                            lineNumber: 97,
+                                            columnNumber: 21
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                            children: "ERP"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                                            lineNumber: 98,
+                                            columnNumber: 21
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                            children: "Reprint w/Changes"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                                            lineNumber: 99,
+                                            columnNumber: 21
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 91,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Label), {
+                                    htmlFor: "prev",
+                                    children: "Previous Job"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 101,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Input), {
+                                    type: "text",
+                                    name: "prev",
+                                    id: "prev",
+                                    className: "form-control"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                                    lineNumber: 104,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Estimating/EstimatingDetails.js",
+                            lineNumber: 87,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Row), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Col), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Label), {
+                                htmlFor: "non_print",
+                                children: "Non-printing item?"
+                            }, void 0, false, {
+                                fileName: "src/components/Estimating/EstimatingDetails.js",
+                                lineNumber: 115,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Button), {
+                                type: "checkbox",
+                                id: "non-print",
+                                onClick: ()=>{
+                                    if (nonClickText == "False") setNonClickText("True");
+                                    else setNonClickText("False");
+                                },
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                    children: nonClickText
+                                }, void 0, false)
+                            }, void 0, false, {
+                                fileName: "src/components/Estimating/EstimatingDetails.js",
+                                lineNumber: 119,
+                                columnNumber: 17
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Estimating/EstimatingDetails.js",
+                        lineNumber: 114,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                    lineNumber: 113,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Row), {
+                    className: "justify-content-end",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.ButtonGroup), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Button), {
+                                outline: true,
+                                color: "info",
+                                id: "loadButton",
+                                children: "Get a Quote Number"
+                            }, void 0, false, {
+                                fileName: "src/components/Estimating/EstimatingDetails.js",
+                                lineNumber: 138,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Button), {
+                                outline: true,
+                                color: "secondary",
+                                id: "openButton",
+                                children: "Load"
+                            }, void 0, false, {
+                                fileName: "src/components/Estimating/EstimatingDetails.js",
+                                lineNumber: 144,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Button), {
+                                color: "danger",
+                                id: "clearButton",
+                                children: "Clear"
+                            }, void 0, false, {
+                                fileName: "src/components/Estimating/EstimatingDetails.js",
+                                lineNumber: 151,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Estimating/EstimatingDetails.js",
+                        lineNumber: 137,
+                        columnNumber: 9
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Estimating/EstimatingDetails.js",
+                    lineNumber: 136,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Estimating/EstimatingDetails.js",
+            lineNumber: 23,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Estimating/EstimatingDetails.js",
+        lineNumber: 22,
+        columnNumber: 5
+    }, undefined);
+};
+_s(EstimatingDetails, "Xf2to5YCLRnikCPsMs1GtbS0RJs=");
+_c = EstimatingDetails;
+exports.default = EstimatingDetails;
+var _c;
+$RefreshReg$(_c, "EstimatingDetails");
+
+  $parcel$ReactRefreshHelpers$9840.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","reactstrap":"7ZY9I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../ReprintToggle":"iiLZN"}],"iiLZN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$41f1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$41f1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const ReprintToggle = ()=>{
+    _s();
+    const [toggle, setToggle] = (0, _react.useState)(false);
+    const triggerToggle = ()=>{
+        setToggle(!toggle);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        onChange: triggerToggle,
+        className: "wrg-toggle",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "wrg-toggle-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "wrg-toggle-check",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "\uD83C\uDF1C"
+                        }, void 0, false, {
+                            fileName: "src/components/ReprintToggle.js",
+                            lineNumber: 13,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/ReprintToggle.js",
+                        lineNumber: 12,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "wrg-toggle-uncheck",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "\uD83C\uDF1E"
+                        }, void 0, false, {
+                            fileName: "src/components/ReprintToggle.js",
+                            lineNumber: 16,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/ReprintToggle.js",
+                        lineNumber: 15,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ReprintToggle.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "wrg-toggle-circle"
+            }, void 0, false, {
+                fileName: "src/components/ReprintToggle.js",
+                lineNumber: 19,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                className: "wrg-toggle-input",
+                type: "checkbox",
+                "aria-label": "Toggle Button"
+            }, void 0, false, {
+                fileName: "src/components/ReprintToggle.js",
+                lineNumber: 20,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ReprintToggle.js",
+        lineNumber: 10,
+        columnNumber: 9
+    }, undefined);
+};
+_s(ReprintToggle, "KMOoc8w16Lq5ZnA3xKzfamBycFo=");
+_c = ReprintToggle;
+exports.default = ReprintToggle;
+var _c;
+$RefreshReg$(_c, "ReprintToggle");
+
+  $parcel$ReactRefreshHelpers$41f1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gvDrB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d7ed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d7ed.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _toggleSwitch = require("../../ToggleSwitch/ToggleSwitch");
+var _toggleSwitchDefault = parcelHelpers.interopDefault(_toggleSwitch);
+var _reactstrap = require("reactstrap");
+var _s = $RefreshSig$();
+const SpecComponent = ()=>{
+    _s();
+    const [pdfProofActive, setPdfProofActive] = (0, _react.useState)(false);
+    const [hardProofActive, setHardProofActive] = (0, _react.useState)(false);
+    const [colorMatchActive, setColorMatchActive] = (0, _react.useState)(false);
+    const [variableDataActive, setVariableDataActive] = (0, _react.useState)(false);
+    const [isOpen, setIsOpen] = (0, _react.useState)(false);
+    const toggle = ()=>setIsOpen(!isOpen);
+    const pdfToggleIsTrue = ()=>{
+        setPdfProofActive((current)=>!current);
+    };
+    const hardToggleIsTrue = ()=>{
+        setHardProofActive((current)=>!current);
+    };
+    const colorMatchToggleIsTrue = ()=>{
+        setColorMatchActive((current)=>!current);
+    };
+    const variableDataToggleIsTrue = ()=>{
+        setVariableDataActive((current)=>!current);
+    };
+    const initialToggleValue = (0, _react.useRef)(false);
+    (0, _react.useEffect)(()=>{
+        if (initialToggleValue.current) {
+            initialToggleValue.current = true;
+            return;
+        }
+    }, [
+        initialToggleValue
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Container), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
+                children: "Job Components"
+            }, void 0, false, {
+                fileName: "src/components/Estimating/SpecComponent.js",
+                lineNumber: 57,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Button), {
+                outline: true,
+                color: "info",
+                className: "btn-block",
+                onClick: toggle,
+                children: "Prepress"
+            }, void 0, false, {
+                fileName: "src/components/Estimating/SpecComponent.js",
+                lineNumber: 59,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Collapse), {
+                isOpen: isOpen,
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Card), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.CardBody), {
+                        className: "collapse",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Table), {
+                            bordered: true,
+                            hover: true,
+                            responsive: true,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            children: "PDF Proof"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 67,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            children: "Hard Copy Proof"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 68,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            children: "PMS or Color Match"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 69,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                            children: "Variable Data"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 70,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                    lineNumber: 66,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toggleSwitchDefault.default), {
+                                                id: "pdfProof",
+                                                checked: pdfProofActive,
+                                                onClick: pdfToggleIsTrue,
+                                                onChange: pdfToggleIsTrue
+                                            }, void 0, false, {
+                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                lineNumber: 75,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 74,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toggleSwitchDefault.default), {
+                                                id: "hardProof",
+                                                checked: hardProofActive,
+                                                onClick: hardToggleIsTrue,
+                                                onChange: hardToggleIsTrue
+                                            }, void 0, false, {
+                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                lineNumber: 83,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 82,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toggleSwitchDefault.default), {
+                                                id: "colorMatch",
+                                                checked: colorMatchActive,
+                                                onClick: colorMatchToggleIsTrue,
+                                                onChange: colorMatchToggleIsTrue
+                                            }, void 0, false, {
+                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                lineNumber: 91,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 90,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toggleSwitchDefault.default), {
+                                                id: "variableData",
+                                                checked: variableDataActive,
+                                                onClick: variableDataToggleIsTrue,
+                                                onChange: variableDataToggleIsTrue
+                                            }, void 0, false, {
+                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                lineNumber: 99,
+                                                columnNumber: 21
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 98,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                    lineNumber: 73,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Estimating/SpecComponent.js",
+                            lineNumber: 65,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Estimating/SpecComponent.js",
+                        lineNumber: 64,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Estimating/SpecComponent.js",
+                    lineNumber: 63,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Estimating/SpecComponent.js",
+                lineNumber: 62,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/components/Estimating/SpecComponent.js",
+                lineNumber: 112,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Button), {
+                outline: true,
+                color: "primary",
+                className: "btn-block",
+                children: "Parts - Press & Paper"
+            }, void 0, false, {
+                fileName: "src/components/Estimating/SpecComponent.js",
+                lineNumber: 113,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Collapse), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Card), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.CardBody), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Collapse), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Button), {
+                                    outline: true,
+                                    color: "primary",
+                                    children: "Part 1"
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                    lineNumber: 120,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Card), {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.CardBody), {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactstrap.Table), {
+                                            hover: true,
+                                            bordered: true,
+                                            responsive: true,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                        children: "Press"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                        lineNumber: 127,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                    lineNumber: 126,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                                                id: "p1press",
+                                                                className: "form-control",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                        children: "Indigo"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                                        lineNumber: 133,
+                                                                        columnNumber: 29
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                        children: "Versant 80"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                                        lineNumber: 134,
+                                                                        columnNumber: 29
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                        children: "KM1250"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                                        lineNumber: 135,
+                                                                        columnNumber: 29
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                                lineNumber: 132,
+                                                                columnNumber: 27
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                                            lineNumber: 131,
+                                                            columnNumber: 25
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                        lineNumber: 130,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                    lineNumber: 129,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                children: "Notes"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                                lineNumber: 142,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                children: "Dimension A"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                                lineNumber: 143,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                children: "Dimension B"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                                lineNumber: 144,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                children: "Pages"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                                lineNumber: 145,
+                                                                columnNumber: 25
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                children: "Bleeds"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                                lineNumber: 146,
+                                                                columnNumber: 25
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                        lineNumber: 141,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                    lineNumber: 140,
+                                                    columnNumber: 21
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                                        type: "text",
+                                                                        id: "p1notes",
+                                                                        className: "form-control"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                                        lineNumber: 152,
+                                                                        columnNumber: 27
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 151,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                                        type: "text",
+                                                                        id: "p1d1",
+                                                                        className: "form-control"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                                        lineNumber: 159,
+                                                                        columnNumber: 27
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 158,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                                        type: "text",
+                                                                        id: "p1d2",
+                                                                        className: "form-control"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                                        lineNumber: 166,
+                                                                        columnNumber: 27
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 165,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                                        type: "text",
+                                                                        id: "p1pp",
+                                                                        className: "form-control"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                                        lineNumber: 173,
+                                                                        columnNumber: 27
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 172,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                                                        id: "p1bleed",
+                                                                        className: "form-control",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                                children: "True"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                                                lineNumber: 181,
+                                                                                columnNumber: 29
+                                                                            }, undefined),
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                                                                children: "False"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/Estimating/SpecComponent.js",
+                                                                                lineNumber: 182,
+                                                                                columnNumber: 29
+                                                                            }, undefined)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                                                        lineNumber: 180,
+                                                                        columnNumber: 27
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 179,
+                                                                    columnNumber: 25
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                                            lineNumber: 150,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                    children: "Paper"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 187,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                    children: "Paper Short Dim"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 188,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                    children: "Paper Long Dim"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 189,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                    children: "Prepress Trimming"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 190,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                                    children: "Envelopes"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                                    lineNumber: 191,
+                                                                    columnNumber: 25
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                                            lineNumber: 186,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                                    lineNumber: 149,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Estimating/SpecComponent.js",
+                                            lineNumber: 125,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Estimating/SpecComponent.js",
+                                        lineNumber: 124,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Estimating/SpecComponent.js",
+                                    lineNumber: 123,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Estimating/SpecComponent.js",
+                            lineNumber: 119,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Estimating/SpecComponent.js",
+                        lineNumber: 118,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Estimating/SpecComponent.js",
+                    lineNumber: 117,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Estimating/SpecComponent.js",
+                lineNumber: 116,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Estimating/SpecComponent.js",
+        lineNumber: 56,
+        columnNumber: 5
+    }, undefined);
+};
+_s(SpecComponent, "qGdYnTbdwk67R70yFCVG2dBpEbU=");
+_c = SpecComponent;
+exports.default = SpecComponent;
+var _c;
+$RefreshReg$(_c, "SpecComponent");
+
+  $parcel$ReactRefreshHelpers$d7ed.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","reactstrap":"7ZY9I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../ToggleSwitch/ToggleSwitch":"47ZpP"}],"47ZpP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3f33 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3f33.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _toggleSwitchScss = require("./ToggleSwitch.scss");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+const ToggleSwitch = ({ id , name , checked , onChange , optionLabels , small , disabled  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "toggle-switch" + (small ? " small-switch" : ""),
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "checkbox",
+                name: name,
+                className: "toggle-switch-checkbox",
+                id: id,
+                checked: checked,
+                onChange: (e)=>onChange(e.target.checked),
+                disabled: disabled
+            }, void 0, false, {
+                fileName: "src/ToggleSwitch/ToggleSwitch.js",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined),
+            id ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                className: "toggle-switch-label",
+                htmlFor: id,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: disabled ? "toggle-switch-inner toggle-switch-disabled" : "toggle-switch-inner",
+                        "data-yes": optionLabels[0],
+                        "data-no": optionLabels[1]
+                    }, void 0, false, {
+                        fileName: "src/ToggleSwitch/ToggleSwitch.js",
+                        lineNumber: 20,
+                        columnNumber: 15
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: disabled ? "toggle-switch-switch toggle-switch-disabled" : "toggle-switch-switch"
+                    }, void 0, false, {
+                        fileName: "src/ToggleSwitch/ToggleSwitch.js",
+                        lineNumber: 29,
+                        columnNumber: 15
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/ToggleSwitch/ToggleSwitch.js",
+                lineNumber: 19,
+                columnNumber: 13
+            }, undefined) : null
+        ]
+    }, void 0, true, {
+        fileName: "src/ToggleSwitch/ToggleSwitch.js",
+        lineNumber: 8,
+        columnNumber: 7
+    }, undefined);
+};
+_c = ToggleSwitch;
+// Set optionLabels for rendering.
+ToggleSwitch.defaultProps = {
+    optionLabels: [
+        "Yes",
+        "No"
+    ]
+};
+ToggleSwitch.propTypes = {
+    id: (0, _propTypesDefault.default).string.isRequired,
+    checked: (0, _propTypesDefault.default).bool.isRequired,
+    onChange: (0, _propTypesDefault.default).func.isRequired,
+    name: (0, _propTypesDefault.default).string,
+    optionLabels: (0, _propTypesDefault.default).array,
+    small: (0, _propTypesDefault.default).bool,
+    disabled: (0, _propTypesDefault.default).bool
+};
+exports.default = ToggleSwitch;
+var _c;
+$RefreshReg$(_c, "ToggleSwitch");
+
+  $parcel$ReactRefreshHelpers$3f33.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ToggleSwitch.scss":"e5GXB","prop-types":"7wKI2"}],"e5GXB":[function() {},{}]},["1xC6H","3yomg","7RQx3"], "7RQx3", "parcelRequire9d6c")
+>>>>>>> d67643c (Update index.html)
 
 </script>
   </body>

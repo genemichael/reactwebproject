@@ -24,3 +24,5 @@ node_modules
 .parcel-cache/data.mdb
 .parcel-cache/e0621fead42e0196.txt
 .parcel-cache/lock.mdb
+.parcel-cache/data.mdb
+.parcel-cache/lock.mdb

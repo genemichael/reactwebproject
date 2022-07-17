@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/main.scss'
+
 import PropTypes from 'prop-types'
 
 const ToggleSwitch = ({ id, name, checked, onChange, optionLabels, small, disabled }) => {

@@ -26,3 +26,5 @@ node_modules
 .parcel-cache/lock.mdb
 .parcel-cache/data.mdb
 .parcel-cache/lock.mdb
+.parcel-cache/data.mdb
+.parcel-cache/lock.mdb

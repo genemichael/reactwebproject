@@ -1,56 +1,54 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import { slide as Menu } from 'react-burger-menu';
 
 const SideBar = props => {
     return (
         <Menu>
-            <a className="menu-item" href="/">
-                Home
-            </a>
+            <Link to="/">Home</Link>
 
-            <a className="menu-item" href="/system">
+            <Link to="/system">
                 System
-            </a>
+            </Link>
 
-            <a className="menu-item" href="./Estimating/EstimatingPage">
+            <Link to="./Estimating/EstimatingPage">
                 Estimating
-            </a>
+            </Link>
 
-            <a className="menu-item" href="/orderEntry">
+            <Link to="./orderEntry">
                 Order Entry
-            </a>
+            </Link>
 
-            <a className="menu-item" href="/S=scheduling">
+            <Link to="./scheduling">
                 Scheduling
-            </a>
+            </Link>
 
-            <a className="menu-item" href="/purchasing">
+            <Link to="./purchasing">
                 Purchasing
-            </a>
-            <a className="menu-item" href="/inventory">
+            </Link>
+            <Link to="./inventory">
                 Inventory
-            </a>
-            <a className="menu-item" href="/Production">
+            </Link>
+            <Link to="./production">
                 Production
-            </a>
-            <a className="menu-item" href="/shipping">
+            </Link>
+            <Link to="./shipping">
                 Shipping and Receiving
-            </a>
-            <a className="menu-item" href="/invoicing">
+            </Link>
+            <Link to="./invoicing">
                 Invoicing
-            </a>
-            <a className="menu-item" href="/costing">
+            </Link>
+            <Link to="./costing">
                 Costing
-            </a>
-            <a className="menu-item" href="/reports">
+            </Link>
+            <Link to="./reports">
                 Reports
-            </a>
-            <a className='menu-item' href='/help'>
+            </Link>
+            <Link to='./help'>
                 Help
-            </a>
+            </Link>
         </Menu>
     );
 };
 
 export default SideBar;
-

@@ -3,7 +3,9 @@ h1 {
 }
 
 .App {
-    text-align: center;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
   }
   
   .App-logo {
@@ -107,7 +109,7 @@ h1 {
   }
   
   .bm-menu {
-    background: #373a47;
+    background: #ffffff;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }

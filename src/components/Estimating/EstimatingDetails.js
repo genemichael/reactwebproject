@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import NonPrintToggle from '../ReprintToggle'
+import ToggleSwitch from '../../ToggleSwitch/ToggleSwitch';
 import { Container, 
     Row, 
     Col, 
@@ -16,8 +16,21 @@ import { Container,
 
 const EstimatingDetails = () => {
     
-    const [nonClickText, setNonClickText] = useState("False");
-   
+    const [nonClickText, setNonClickText] = useState(false);
+    const initialToggleValue = useRef(false);
+
+    useEffect(() => {
+      if(initialToggleValue.current) {
+        initialToggleValue.current=true
+        return;
+      }
+      
+    }, [initialToggleValue])
+
+    const nonPrintToggleIsTrue = () =>{
+        setNonClickText(current => !current);
+      };
+  
     return (
     <Container>
     <Form>

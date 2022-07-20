@@ -1,11 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import ToggleSwitch from '../../ToggleSwitch/ToggleSwitch'
-import { Container, 
-    Row, 
-    Col, 
-    Label,
-    Input, 
-    Form, 
+import { 
+    Container, 
     Button,
     Collapse,
     Card,
@@ -18,8 +14,8 @@ const SpecComponent = () => {
   const [hardProofActive, setHardProofActive] = useState(false);
   const [colorMatchActive, setColorMatchActive] = useState(false);
   const [variableDataActive, setVariableDataActive] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const [active, setIsOpen] = useState(1);
+  const toggle = () => setIsOpen(!active);
   const pdfToggleIsTrue = () =>{
     setPdfProofActive(current => !current);
   };
@@ -48,12 +44,13 @@ const SpecComponent = () => {
 
   return (
     <Container>
-      <h5>Job Components</h5>
-      
-      <Button outline color="info" className="btn-block" onClick={toggle}>
+      <h5>Prepress</h5>
+      <div class="d-grid gap-2">
+      <Button outline color="info" className="btn" onClick={()=>toggle(setIsOpen(1))}>
         Prepress
       </Button>
-      <Collapse isOpen={isOpen}>
+      </div>
+      <Collapse isOpen={active === 1 ? true : false}>
         <Card>
           <CardBody className="collapse">
             <Table bordered hover responsive>
@@ -104,10 +101,12 @@ const SpecComponent = () => {
         </Card>
       </Collapse>
       <br />
-      <Button outline color="primary" className="btn-block">
-        Parts - Press & Paper
+      <div class="d-grid gap-2">
+      <Button outline color="primary" className="btn-block" onClick={()=>toggle(setIsOpen(2))}>
+        Parts - Dims and Substrates
       </Button>
-      <Collapse>
+      </div>
+      <Collapse isOpen={active === 1 ? true : false}>
         <Card>
           <CardBody>
             <Collapse>

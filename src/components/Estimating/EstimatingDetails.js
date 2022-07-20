@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import ToggleSwitch from '../../ToggleSwitch/ToggleSwitch';
 import { Container, 
     Row, 
@@ -129,24 +129,17 @@ const EstimatingDetails = () => {
                 htmlFor='non_print'>
                     Non-printing item?
                 </Label>
-                <Button
-                type='checkbox'
+                <ToggleSwitch
+                
                 id='non-print'
-                onClick={() => {
-                    if(nonClickText=="False"){
-                        setNonClickText("True")
-                    } else {
-                        setNonClickText("False")
-                    }
-                }}
-                >
-                <>
-                {nonClickText}
-                </>
-                </Button>
+                onClick={nonPrintToggleIsTrue}
+                onChange={nonPrintToggleIsTrue}
+                
+                />
             </Col>
         </Row>
-        <Row className='justify-content-end'>
+        <Row>
+        <div className='d-flex justify-content-end'>
         <ButtonGroup>
             <Button 
                 outline
@@ -165,6 +158,7 @@ const EstimatingDetails = () => {
             color='danger'
             id='clearButton'>Clear</Button>
         </ButtonGroup>
+        </div>
         </Row>
     </Form>
     </Container>

@@ -8,6 +8,7 @@ import SpecComponent from "./components/Estimating/SpecComponent";
 import EstimatingStartScreen from "./components/Estimating/EstimatingStartScreen"
 import EstimatingDetails from "./components/Estimating/EstimatingDetails"
 import Header from "./components/Header"
+import EstimatingNav from "./components/Estimating/EstimatingNav"
 
 
 const App =()=>{
@@ -21,7 +22,7 @@ const App =()=>{
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="*" element={<EstimatingDetails />} />
+            <Route path="*" element={<EstimatingNav />} />
         </Routes>
         </>
     )

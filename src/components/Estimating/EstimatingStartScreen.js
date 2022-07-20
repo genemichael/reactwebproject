@@ -38,7 +38,9 @@ const EstimatingStartScreen = () => {
             </Col>
             
     </Row>
-    <Row className='justify-content-end'>
+    <br />
+    <Row> 
+    <div className='d-flex justify-content-end'>
 
         <ButtonGroup className='btn-group'>
             <Button 
@@ -50,8 +52,10 @@ const EstimatingStartScreen = () => {
             
             <Button
             color='danger'
+            className='btn'
             id='clearButton'>Clear</Button>
         </ButtonGroup>
+        </div>
         </Row>
     </Container>
   )

@@ -10,10 +10,11 @@ import {
     ButtonGroup,
     Input
  } from 'reactstrap'
+import ToggleSwitch from '../../ToggleSwitch/ToggleSwitch'
 
 const EstimatingStartScreen = () => {
-    const [dropdownOpen, setDropdownOpen] = useState(false)
-    const toggle = () => setDropdownOpen(prevState => !prevState)
+    const [isCopy, setIsCopy] = useState(false)
+    const toggle = () => setIsCopy(current => !current)
   return (
     <Container>
     <p></p>
@@ -39,24 +40,47 @@ const EstimatingStartScreen = () => {
             
     </Row>
     <br />
-    <Row> 
-    <div className='d-flex justify-content-end'>
+    <Row>
+        <Col>
 
-        <ButtonGroup className='btn-group'>
+        </Col>
+        <Col>
+            <p>Copy Previous Estimate?</p>
+        </Col>
+        <Col>
+            <ToggleSwitch
+                id='hardProof'
+                    checked={isCopy}
+                    onClick={toggle}
+                    onChange={toggle}
+                    >
+            </ToggleSwitch>
+        </Col>
+    </Row>
+    <br />
+    <Row>
+    <div className='d-flex justify-content-end'>
+        <ButtonGroup>
             <Button 
                 outline
-                color='primary'
-                id='saveButton'
-                >Save & Continue
+                color='info'
+                id='loadButton'
+                >Get a Quote Number
             </Button>
-            
+            <Button
+                outline
+                color='secondary'
+                id='openButton'
+                >
+                    Load
+                </Button>
             <Button
             color='danger'
-            className='btn'
             id='clearButton'>Clear</Button>
         </ButtonGroup>
         </div>
         </Row>
+    
     </Container>
   )
 }

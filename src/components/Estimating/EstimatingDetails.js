@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import ToggleSwitch from '../../ToggleSwitch/ToggleSwitch';
+import SaveContinue from '../Buttons/SaveContinue';
 import { Container, 
     Row, 
     Col, 
@@ -15,39 +16,21 @@ import { Container,
  
 
 const EstimatingDetails = () => {
-    
-    const [nonClickText, setNonClickText] = useState(false);
-    const initialToggleValue = useRef(false);
-
-    useEffect(() => {
-      if(initialToggleValue.current) {
-        initialToggleValue.current=true
-        return;
-      }
-      
-    }, [initialToggleValue])
-
-    const nonPrintToggleIsTrue = () =>{
-        setNonClickText(current => !current);
-      };
   
     return (
     <Container>
     <Form>
-        <h5>Job Details</h5>
-        <p>For a new estimate, fill in details and click Get a Quote Number</p>
-        <p>To load an estimate, fill in the Estimate Number and click Load</p>
         <Row>
             <Col>
-                <Label htmlFor='estNumber'>Estimate Number</Label>
-                <Input
-                    type='text'
-                    name='estNumber'
-                    id='estNumber'
-                    disabled>
-                </Input>
+                <h5>Project Details</h5>
+            </Col>
+            <Col>
+                <div className='d-flex justify-content-end'>
+                    Estimate Number: 
+                </div>
             </Col>
         </Row>
+        <br/>
         <Row>
             <Col>
                 <Label htmlFor='cust'>
@@ -123,43 +106,9 @@ const EstimatingDetails = () => {
                 </Input>
             </Col>
         </Row>
-        <Row>
-            <Col>
-                <Label
-                htmlFor='non_print'>
-                    Non-printing item?
-                </Label>
-                <ToggleSwitch
-                
-                id='non-print'
-                onClick={nonPrintToggleIsTrue}
-                onChange={nonPrintToggleIsTrue}
-                
-                />
-            </Col>
-        </Row>
-        <Row>
-        <div className='d-flex justify-content-end'>
-        <ButtonGroup>
-            <Button 
-                outline
-                color='info'
-                id='loadButton'
-                >Get a Quote Number
-            </Button>
-            <Button
-                outline
-                color='secondary'
-                id='openButton'
-                >
-                    Load
-                </Button>
-            <Button
-            color='danger'
-            id='clearButton'>Clear</Button>
-        </ButtonGroup>
-        </div>
-        </Row>
+        <br/>
+        <SaveContinue/>
+        
     </Form>
     </Container>
     

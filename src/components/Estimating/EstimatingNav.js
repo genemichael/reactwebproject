@@ -21,7 +21,7 @@ const EstimatingNav = () => {
           <NavLink onClick={() => setActive(2)}>Project Header</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink onClick={() => setActive(3)}>Prepress and Specs</NavLink>
+          <NavLink onClick={() => setActive(3)}>Prepress</NavLink>
         </NavItem>
         <NavItem>
           <NavLink onClick={() => setActive(4)}>Production</NavLink>

@@ -2,20 +2,23 @@ import React, { useState, useEffect, useRef } from 'react'
 import ToggleSwitch from '../../ToggleSwitch/ToggleSwitch'
 import { 
     Container, 
+    Row,
+    Col,
     Button,
     Collapse,
     Card,
     CardBody,
-    Table
+    Table,
+    Input
  } from 'reactstrap'
+import SaveContinue from '../Buttons/SaveContinue';
 
 const SpecComponent = () => {
   const [pdfProofActive, setPdfProofActive] = useState(false);
   const [hardProofActive, setHardProofActive] = useState(false);
   const [colorMatchActive, setColorMatchActive] = useState(false);
   const [variableDataActive, setVariableDataActive] = useState(false);
-  const [active, setIsOpen] = useState(1);
-  const toggle = () => setIsOpen(!active);
+  const [filePrepActive, setFilePrepActive] = useState(false);
   const pdfToggleIsTrue = () =>{
     setPdfProofActive(current => !current);
   };
@@ -31,6 +34,9 @@ const SpecComponent = () => {
   const variableDataToggleIsTrue = () =>{
     setVariableDataActive(current => !current);
   };
+  const filePrepActiveIsTrue = () => {
+    setFilePrepActive(current => !current)
+  }
 
   const initialToggleValue = useRef(false);
 
@@ -45,152 +51,95 @@ const SpecComponent = () => {
   return (
     <Container>
       <h5>Prepress</h5>
-      <div class="d-grid gap-2">
-      <Button outline color="info" className="btn" onClick={()=>toggle(setIsOpen(1))}>
-        Prepress
-      </Button>
-      </div>
-      <Collapse isOpen={active === 1 ? true : false}>
+      
         <Card>
-          <CardBody className="collapse">
-            <Table bordered hover responsive>
-              <thead>
-                <th>PDF Proof</th>
-                <th>Hard Copy Proof</th>
-                <th>PMS or Color Match</th>
-                <th>Variable Data</th>
-                
-              </thead>
-              <tbody>
-                <td>
-                <ToggleSwitch 
+          <CardBody >
+          <Row>
+            <Col>
+              PDF Proof
+            </Col>
+            <Col>
+              <ToggleSwitch 
                   id='pdfProof'
                   checked={pdfProofActive}
                   onClick={pdfToggleIsTrue}
                   onChange={pdfToggleIsTrue}
                 />
-                </td>
-                <td>
-                <ToggleSwitch 
+            </Col>
+            <Col>
+            Quantity
+            <Input type='number' id='pdfQty'/>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              Color Proof
+            </Col>
+            <Col>
+              <ToggleSwitch 
                   id='hardProof'
                   checked={hardProofActive}
                   onClick={hardToggleIsTrue}
                   onChange={hardToggleIsTrue}
                 />
-                </td>
-                <td>
-                  <ToggleSwitch 
+            </Col>
+            <Col>
+            Quantity
+            <Input type='number' id='hardProofQty'/>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              Color Match
+            </Col>
+            <Col>
+              <ToggleSwitch 
                   id='colorMatch'
                   checked={colorMatchActive}
                   onClick={colorMatchToggleIsTrue}
                   onChange={colorMatchToggleIsTrue}
                 />
-                </td>
-                <td>
-                    <ToggleSwitch
+            </Col>
+            <Col>
+            Colors
+            <Input type='number' id='colorMatchQty'/>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              File Prep
+            </Col>
+            <Col>
+              <ToggleSwitch
+              id='filePrep'
+              checked={filePrepActive}
+              onClick={filePrepActiveIsTrue}
+              onChange={filePrepActiveIsTrue} />
+            </Col>
+            <Col>
+              Hours
+              <Input type='number' id='prepHours' />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              Variable Data
+              </Col>
+            <Col>
+              <ToggleSwitch
                     id='variableData'
                     checked={variableDataActive}
                     onClick={variableDataToggleIsTrue}
-                    onChange={variableDataToggleIsTrue}
-                    />
-                </td>
-                
-              </tbody>
-            </Table>
+                    onChange={variableDataToggleIsTrue}/>
+            </Col>
+            <Col>
+
+            </Col>
+          </Row>
+          <br />
+          <SaveContinue/>
           </CardBody>
         </Card>
-      </Collapse>
-      <br />
-      <div class="d-grid gap-2">
-      <Button outline color="primary" className="btn-block" onClick={()=>toggle(setIsOpen(2))}>
-        Parts - Dims and Substrates
-      </Button>
-      </div>
-      <Collapse isOpen={active === 1 ? true : false}>
-        <Card>
-          <CardBody>
-            <Collapse>
-              <Button outline color="primary">
-                Part 1
-              </Button>
-              <Card>
-                <CardBody>
-                  <Table hover bordered responsive>
-                    <thead>
-                      <th>Press</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <select id="p1press" className="form-control">
-                            <option>Indigo</option>
-                            <option>Versant 80</option>
-                            <option>KM1250</option>
-                          </select>
-                        </td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr>
-                        <th>Notes</th>
-                        <th>Dimension A</th>
-                        <th>Dimension B</th>
-                        <th>Pages</th>
-                        <th>Bleeds</th>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <input
-                            type="text"
-                            id="p1notes"
-                            className="form-control"
-                          />
-                        </td>
-                        <td>
-                          <input
-                            type="text"
-                            id="p1d1"
-                            className="form-control"
-                          />
-                        </td>
-                        <td>
-                          <input
-                            type="text"
-                            id="p1d2"
-                            className="form-control"
-                          />
-                        </td>
-                        <td>
-                          <input
-                            type="text"
-                            id="p1pp"
-                            className="form-control"
-                          />
-                        </td>
-                        <td>
-                          <select id="p1bleed" className="form-control">
-                            <option>True</option>
-                            <option>False</option>
-                          </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Paper</th>
-                        <th>Paper Short Dim</th>
-                        <th>Paper Long Dim</th>
-                        <th>Prepress Trimming</th>
-                        <th>Envelopes</th>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </CardBody>
-              </Card>
-            </Collapse>
-          </CardBody>
-        </Card>
-      </Collapse>
     </Container>
   );
 };

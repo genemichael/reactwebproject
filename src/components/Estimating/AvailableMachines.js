@@ -112,6 +112,16 @@ const AvailableMachines = () => {
                             </Button>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            Vendor Service
+                        </td>
+                        <td>
+                            <Button>
+                                +
+                            </Button>
+                        </td>
+                    </tr>
                     </tbody>
                 </Table>
             </Col>

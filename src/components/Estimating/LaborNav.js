@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import { Nav, NavItem, NavLink, Card, CardBody, Container, Row, Col, Collapse, Button } from 'reactstrap'
 import AvailableMachines from './AvailableMachines';
+import CompFinMachines from './CompFinMachines'
+import ProdFinMachines from './ProdFinMachines';
 
 const LaborNav = () => {
     const [active, setActive] = useState(1);
@@ -31,6 +33,8 @@ const LaborNav = () => {
         <Collapse isOpen={active === 1 ? true : false}>
         <Card>
           <CardBody>
+          This card modifies the press sheet for this sole component.
+          <br/>
             <AvailableMachines />
           </CardBody>
         </Card>
@@ -38,14 +42,14 @@ const LaborNav = () => {
       <Collapse isOpen={active === 2 ? true : false}>
         <Card>
           <CardBody>
-            <AvailableMachines />
+            <CompFinMachines />
           </CardBody>
         </Card>
       </Collapse>
       <Collapse isOpen={active === 3 ? true : false}>
         <Card>
           <CardBody>
-            <AvailableMachines />
+            <ProdFinMachines />
           </CardBody>
         </Card>
       </Collapse>

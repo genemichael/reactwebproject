@@ -5,6 +5,7 @@ import EstimatingStartScreen from './EstimatingStartScreen'
 import EstimatingDetails from './EstimatingDetails'
 import Home from '../Home'
 import SpecComponent from './SpecComponent'
+import ProductionRoute from './ProductionRoute'
 
 
 const EstimatingNav = () => {
@@ -59,7 +60,7 @@ const EstimatingNav = () => {
       <Collapse isOpen={active === 4 ? true : false}>
         <Card>
           <CardBody>
-            <EstimatingDetails />
+            <ProductionRoute />
           </CardBody>
         </Card>
       </Collapse>

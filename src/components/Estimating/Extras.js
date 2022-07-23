@@ -33,16 +33,40 @@ const Extras = () => {
                             <h5>One Time Charges</h5>
                             <Label htmlFor='oneTimeDescription'>One-Time Charge Description</Label>
                             <Input type='text' id='oneTimeDescription'/>
+                            <Label htmlFor='oneTimeQuantity'>Quantity</Label>
+                            <Input id='oneTimeQuantity' placeholder='Quantity in eaches'/>
                             <Label htmlFor='oneTimePrice'>One-Time Charge Price</Label>
                             <Input type='number' id='oneTimePrice'/>
+                            <Label htmlFor='oneTimePriceUOM'>Price UOM</Label>
+                            <Input 
+                            id='oneTimePriceUOM'
+                            type='select'>
+                                <option></option>
+                                <option>EA</option>
+                                <option>M</option>
+                                <option>C</option>
+                            </Input>
+                            <br/>
                             <SaveClear/>
                         </Col>
                         <Col className='col-6'>
                             <h5>Special Charges</h5>
                             <Label htmlFor='specialChargeDescription'>Special Charge Description</Label>
-                            <Input type='text' id='passThroughDescription'/>
+                            <Input type='text' id='specialChargeDescription'/>
+                            <Label htmlFor='specialChargeQuantity'>Quantity</Label>
+                            <Input id='specialChargeQuantity' placeholder='Quantity in eaches'/>
                             <Label htmlFor='passThroughPrice'>Special Charge Price</Label>
                             <Input type='number' id='passThroughPrice'/>
+                            <Label htmlFor='specialChargePriceUOM'>Price UOM</Label>
+                            <Input 
+                            id='specialChargePriceUOM'
+                            type='select'>
+                                <option></option>
+                                <option>EA</option>
+                                <option>M</option>
+                                <option>C</option>
+                            </Input>
+                            <br/>
                             <SaveClear/>
                         </Col>
                     </Row>

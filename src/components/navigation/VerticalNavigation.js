@@ -31,7 +31,7 @@ const VerticalNavigation = () => {
         <NavItem>
             <NavLink 
             active
-            href='#'>
+            href='../Estimating/EstimatingNav.js'>
                 <FontAwesomeIcon icon={faEraser} /> Estimating
             </NavLink>
         </NavItem>

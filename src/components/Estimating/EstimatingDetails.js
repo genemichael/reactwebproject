@@ -43,7 +43,7 @@ const EstimatingDetails = () => {
                 >
                 </Input>
                 <Label htmlFor='desc'>
-                    Job Title
+                    Project Title
                 </Label>
                 <Input
                 type='text'

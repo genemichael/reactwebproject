@@ -11,7 +11,7 @@ const SideBar = props => {
                 System
             </Link>
 
-            <Link to="./Estimating/EstimatingPage">
+            <Link to="./Estimating/EstimatingNav">
                 Estimating
             </Link>
 

@@ -11,9 +11,9 @@ import {
     Input,
     Form
  } from 'reactstrap'
- import ToggleSwitch from '../../ToggleSwitch/ToggleSwitch'
-import SaveContinue from '../Buttons/SaveContinue'
- import LaborNav from './LaborNav'
+import ToggleSwitch from '../../ToggleSwitch/ToggleSwitch'
+import SaveAddClear from '../Buttons/SaveAddClear'
+import LaborNav from './LaborNav'
  
 
 const ProductionRoute = () => {
@@ -130,7 +130,7 @@ const ProductionRoute = () => {
             </Row>
         </Form>
         <br/>
-        <SaveContinue/>
+        <SaveAddClear/>
     </Container>
   )
 }

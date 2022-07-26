@@ -1,5 +1,5 @@
 # reactwebproject
-This is one of several small applications meant to tie together the needs of small print shops already using Google Workspace as their primary office suite. 
+This is one of several small applications meant to tie together the needs of small print shops already using Google Workspace as their primary office suite. This is the Estimating application.
 
 There are several apps that support the whole. 
 
